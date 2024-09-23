@@ -8,6 +8,7 @@ src/CNNClassifier/constants/__init__.py
 src/CNNClassifier/entity/__init__.py
 src/CNNClassifier/pipeline/__init__.py
 src/CNNClassifier/utils/__init__.py
+src/CNNClassifier/utils/common.py
 src/End_to_end_Kidney_Diseases_Classification.egg-info/PKG-INFO
 src/End_to_end_Kidney_Diseases_Classification.egg-info/SOURCES.txt
 src/End_to_end_Kidney_Diseases_Classification.egg-info/dependency_links.txt
