@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: End-to-end-Kidney-Diseases-Classification
+Version: 0.0.0
+Summary: A small package for kidney disease classification using CNN
+Home-page: https://github.com/tirtapir/End-to-end-Kidney-Diseases-Classification
+Author: tirtapir
+Author-email: tirtarumy14@gmail.com
+Project-URL: Bug Tracker, https://github.com/tirtapir/End-to-end-Kidney-Diseases-Classification/issues
+Description-Content-Type: text/markdown
+
+# End-to-end-Kidney-Diseases-Classification
