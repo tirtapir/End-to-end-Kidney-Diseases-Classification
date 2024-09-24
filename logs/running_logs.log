@@ -1,2 +1,31 @@
 [2024-09-24 05:32:00,519]: [INFO]: [main]: [Test custom log]:
 [2024-09-24 05:32:48,270]: [INFO]: [main]: [Test custom log]
+[2024-09-24 09:33:35,103]: [ERROR]: [main]: [name 'STAGE_NAME' is not defined] 
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 5, in <module>
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+                                ^^^^^^^^^^
+NameError: name 'STAGE_NAME' is not defined
+[2024-09-24 09:41:01,492]: [INFO]: [main]: [>>>>>> stage Data Ingestion Stage started <<<<<<] 
+[2024-09-24 09:41:01,493]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 09:41:01,494]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 09:41:01,494]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 09:41:01,494]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-24 09:41:01,494]: [ERROR]: [main]: ['DataIngestion' object has no attribute 'download_file'] 
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 7, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestion' object has no attribute 'download_file'
+[2024-09-24 09:42:22,563]: [INFO]: [main]: [>>>>>> stage Data Ingestion Stage started <<<<<<] 
+[2024-09-24 09:42:22,564]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 09:42:22,565]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 09:42:22,566]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 09:42:22,566]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-24 09:42:22,566]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 09:42:59,679]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 09:43:00,003]: [INFO]: [main]: [>>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x] 
