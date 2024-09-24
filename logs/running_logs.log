@@ -29,3 +29,32 @@ AttributeError: 'DataIngestion' object has no attribute 'download_file'
 [2024-09-24 09:43:00,003]: [INFO]: [main]: [>>>>>> stage Data Ingestion Stage completed <<<<<<
 
 x==========x] 
+[2024-09-24 10:43:09,040]: [INFO]: [utils]: [NumExpr defaulting to 8 threads.] 
+[2024-09-24 10:49:13,073]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 10:49:13,076]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 10:49:13,078]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 10:49:13,079]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-24 10:49:47,291]: [WARNING]: [saving_utils]: [Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-09-24 10:49:47,381]: [WARNING]: [optimizer]: [At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.] 
+[2024-09-24 10:49:47,383]: [WARNING]: [__init__]: [There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.] 
+[2024-09-24 11:08:14,622]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage started <<<<<<] 
+[2024-09-24 11:08:14,624]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 11:08:14,626]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 11:08:14,627]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 11:08:14,627]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-24 11:08:14,627]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 11:08:50,245]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 11:08:50,551]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x] 
+[2024-09-24 11:08:50,551]: [INFO]: [main]: [*******************] 
+[2024-09-24 11:08:50,551]: [INFO]: [main]: [>>>>>> stage Prepare base model started <<<<<<] 
+[2024-09-24 11:08:50,552]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 11:08:50,554]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 11:08:50,555]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 11:08:50,555]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-24 11:08:50,915]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 11:08:50,994]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 11:08:51,065]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
