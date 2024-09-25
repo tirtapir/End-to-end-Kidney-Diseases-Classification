@@ -58,3 +58,186 @@ x==========x]
 [2024-09-24 11:08:51,065]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
 
 x==========x] 
+[2024-09-24 14:22:45,879]: [INFO]: [utils]: [NumExpr defaulting to 8 threads.] 
+[2024-09-24 14:37:14,599]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 14:37:14,601]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 14:37:14,602]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 14:37:14,603]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 14:43:25,171]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 14:43:25,175]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 14:43:25,177]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 14:43:25,178]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 14:49:58,802]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 14:49:58,806]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 14:49:58,807]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 14:49:58,808]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 14:50:55,131]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 14:50:55,133]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 14:50:55,134]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 14:50:55,135]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:06:37,532]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:06:37,535]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:06:37,536]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:06:37,537]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:07:10,508]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:07:10,510]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:07:10,511]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:07:10,511]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:11:35,457]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:11:35,468]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:11:35,469]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:11:35,470]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-24 15:11:36,400]: [WARNING]: [saving_utils]: [Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-09-24 15:11:50,112]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:11:50,116]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:11:50,118]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:11:50,119]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:13:14,834]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:13:14,836]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:13:14,837]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:13:14,837]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:32:43,897]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage started <<<<<<] 
+[2024-09-24 15:32:43,898]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:32:43,900]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:32:43,901]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:32:43,901]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-24 15:32:43,901]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 15:33:00,503]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 15:33:00,891]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x] 
+[2024-09-24 15:33:00,891]: [INFO]: [main]: [*******************] 
+[2024-09-24 15:33:00,891]: [INFO]: [main]: [>>>>>> stage Prepare base model started <<<<<<] 
+[2024-09-24 15:33:00,893]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:33:00,894]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:33:00,895]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:33:00,896]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-24 15:33:01,247]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 15:33:01,313]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 15:33:01,371]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-09-24 15:33:01,372]: [INFO]: [main]: [*******************] 
+[2024-09-24 15:33:01,372]: [INFO]: [main]: [>>>>>> stage Training started <<<<<<] 
+[2024-09-24 15:33:01,373]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:33:01,374]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:33:01,374]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:33:01,374]: [ERROR]: [main]: ['ConfigurationManager' object has no attribute 'get_training_config'] 
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 36, in <module>
+    model_trainer.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_03_model_training.py", line 16, in main
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_training_config'
+[2024-09-24 15:47:53,829]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage started <<<<<<] 
+[2024-09-24 15:47:53,831]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:47:53,833]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:47:53,833]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:47:53,833]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-24 15:47:53,833]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 15:48:12,234]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-24 15:48:12,521]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x] 
+[2024-09-24 15:48:12,521]: [INFO]: [main]: [*******************] 
+[2024-09-24 15:48:12,521]: [INFO]: [main]: [>>>>>> stage Prepare base model started <<<<<<] 
+[2024-09-24 15:48:12,522]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:48:12,523]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:48:12,523]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:48:12,523]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-24 15:48:12,827]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 15:48:12,898]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-24 15:48:12,942]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-09-24 15:48:12,943]: [INFO]: [main]: [*******************] 
+[2024-09-24 15:48:12,943]: [INFO]: [main]: [>>>>>> stage Training started <<<<<<] 
+[2024-09-24 15:48:12,944]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-24 15:48:12,944]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-24 15:48:12,944]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-24 15:48:12,944]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-24 15:48:13,085]: [WARNING]: [saving_utils]: [Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-09-24 15:48:13,827]: [ERROR]: [main]: [Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.] 
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 36, in <module>
+    model_trainer.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_03_model_training.py", line 20, in main
+    training.train()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/optimizers/base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-09-25 13:51:43,791]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage started <<<<<<] 
+[2024-09-25 13:51:43,793]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 13:51:43,794]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 13:51:43,795]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 13:51:43,795]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-25 13:51:43,795]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-25 13:53:15,228]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-25 13:53:15,531]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x] 
+[2024-09-25 13:53:15,531]: [INFO]: [main]: [*******************] 
+[2024-09-25 13:53:15,531]: [INFO]: [main]: [>>>>>> stage Prepare base model started <<<<<<] 
+[2024-09-25 13:53:15,532]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 13:53:15,534]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 13:53:15,535]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 13:53:15,535]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-25 13:53:15,877]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-25 13:53:15,940]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-25 13:53:15,978]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-09-25 13:53:15,978]: [INFO]: [main]: [*******************] 
+[2024-09-25 13:53:15,978]: [INFO]: [main]: [>>>>>> stage Training started <<<<<<] 
+[2024-09-25 13:53:15,980]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 13:53:15,980]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 13:53:15,980]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 13:53:15,980]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-25 13:53:16,064]: [WARNING]: [saving_utils]: [Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-09-25 13:53:16,066]: [ERROR]: [main]: ['TrainingConfig' object has no attribute 'params_learning_rate'] 
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 36, in <module>
+    model_trainer.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.get_base_model()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_training.py", line 19, in get_base_model
+    self.optimizer = tf.keras.optimizers.SGD(learning_rate=self.config.params_learning_rate)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2024-09-25 14:00:09,478]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage started <<<<<<] 
+[2024-09-25 14:00:09,480]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 14:00:09,481]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 14:00:09,482]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 14:00:09,482]: [INFO]: [common]: [created directory at: artifacts/data_ingestion] 
+[2024-09-25 14:00:09,482]: [INFO]: [data_ingestion]: [Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-25 14:07:15,378]: [INFO]: [data_ingestion]: [Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip] 
+[2024-09-25 14:07:15,684]: [INFO]: [main]: [>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x] 
+[2024-09-25 14:07:15,684]: [INFO]: [main]: [*******************] 
+[2024-09-25 14:07:15,684]: [INFO]: [main]: [>>>>>> stage Prepare base model started <<<<<<] 
+[2024-09-25 14:07:15,686]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 14:07:15,688]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 14:07:15,689]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 14:07:15,689]: [INFO]: [common]: [created directory at: artifacts/prepare_base_model] 
+[2024-09-25 14:07:16,049]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-25 14:07:16,119]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-25 14:07:16,171]: [INFO]: [main]: [>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-09-25 14:07:16,172]: [INFO]: [main]: [*******************] 
+[2024-09-25 14:07:16,172]: [INFO]: [main]: [>>>>>> stage Training started <<<<<<] 
+[2024-09-25 14:07:16,173]: [INFO]: [common]: [yaml file: config/config.yaml loaded successfully] 
+[2024-09-25 14:07:16,174]: [INFO]: [common]: [yaml file: params.yaml loaded successfully] 
+[2024-09-25 14:07:16,174]: [INFO]: [common]: [created directory at: artifacts] 
+[2024-09-25 14:07:16,174]: [INFO]: [common]: [created directory at: artifacts/training] 
+[2024-09-25 14:07:16,266]: [WARNING]: [saving_utils]: [Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-09-25 14:10:28,642]: [WARNING]: [saving_api]: [You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ] 
+[2024-09-25 14:10:28,719]: [INFO]: [main]: [>>>>>> stage Training completed <<<<<<
+
+x==========x] 
