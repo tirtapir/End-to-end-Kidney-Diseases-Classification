@@ -5,6 +5,7 @@ import mlflow.keras
 import urllib.parse as urlparse
 from src.CNNClassifier.entity.config_entity import (EvaluationConfig)
 from src.CNNClassifier.utils.common import save_json
+from mlflow import get_tracking_uri
 
 class Evaluation:
     def __init__(self, config: EvaluationConfig):

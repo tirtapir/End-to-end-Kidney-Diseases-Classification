@@ -370,3 +370,1744 @@ x==========x]
 [2024-09-27 11:37:10,604: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-09-27 13:53:24,754: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 13:53:24,758: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:53:24,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:53:24,761: INFO: common: created directory at: artifacts]
+[2024-09-27 13:53:24,761: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 13:53:24,761: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 13:54:02,339: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 13:54:02,676: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 13:54:02,676: INFO: main: *******************]
+[2024-09-27 13:54:02,676: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 13:54:02,678: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:54:02,680: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:54:02,681: INFO: common: created directory at: artifacts]
+[2024-09-27 13:54:02,681: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 13:54:03,071: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 13:54:03,173: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 13:54:03,250: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 13:54:03,250: INFO: main: *******************]
+[2024-09-27 13:54:03,250: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 13:54:03,251: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:54:03,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:54:03,252: INFO: common: created directory at: artifacts]
+[2024-09-27 13:54:03,252: INFO: common: created directory at: artifacts/training]
+[2024-09-27 13:54:03,338: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 13:54:59,337: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 13:54:59,415: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 13:54:59,415: INFO: main: *******************]
+[2024-09-27 13:54:59,415: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 13:54:59,419: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:54:59,425: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:54:59,427: INFO: common: created directory at: artifacts]
+[2024-09-27 13:54:59,517: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 13:55:17,014: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 13:55:17,015: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 13:55:17,016: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 13:58:55,257: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 13:58:55,260: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:58:55,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:58:55,262: INFO: common: created directory at: artifacts]
+[2024-09-27 13:58:55,263: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 13:58:55,263: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 13:59:29,766: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 13:59:30,083: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 13:59:30,083: INFO: main: *******************]
+[2024-09-27 13:59:30,083: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 13:59:30,084: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:59:30,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:59:30,085: INFO: common: created directory at: artifacts]
+[2024-09-27 13:59:30,085: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 13:59:30,490: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 13:59:30,610: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 13:59:30,682: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 13:59:30,682: INFO: main: *******************]
+[2024-09-27 13:59:30,682: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 13:59:30,683: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 13:59:30,684: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 13:59:30,684: INFO: common: created directory at: artifacts]
+[2024-09-27 13:59:30,684: INFO: common: created directory at: artifacts/training]
+[2024-09-27 13:59:30,790: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:00:23,295: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:00:23,387: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:00:23,387: INFO: main: *******************]
+[2024-09-27 14:00:23,387: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:00:23,389: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:00:23,394: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:00:23,396: INFO: common: created directory at: artifacts]
+[2024-09-27 14:00:23,477: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:00:39,221: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:00:39,221: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:00:39,224: ERROR: main: 'MlflowClient' object has no attribute 'get_tracking_uri']
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow_client.get_tracking_uri()).scheme
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MlflowClient' object has no attribute 'get_tracking_uri'
+[2024-09-27 14:01:42,812: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:01:42,818: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:01:42,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:01:42,822: INFO: common: created directory at: artifacts]
+[2024-09-27 14:01:42,822: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:01:42,822: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:02:18,963: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:02:19,325: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:02:19,326: INFO: main: *******************]
+[2024-09-27 14:02:19,326: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:02:19,327: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:02:19,330: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:02:19,331: INFO: common: created directory at: artifacts]
+[2024-09-27 14:02:19,331: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:02:19,700: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:02:19,855: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:02:20,060: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:02:20,060: INFO: main: *******************]
+[2024-09-27 14:02:20,060: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:02:20,061: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:02:20,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:02:20,062: INFO: common: created directory at: artifacts]
+[2024-09-27 14:02:20,062: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:02:20,141: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:03:10,864: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:03:10,980: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:03:10,980: INFO: main: *******************]
+[2024-09-27 14:03:10,980: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:03:10,985: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:03:10,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:03:10,990: INFO: common: created directory at: artifacts]
+[2024-09-27 14:03:11,070: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:03:27,114: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:03:27,114: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:03:27,115: ERROR: main: 'str' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow_client.tracking_uri()).scheme
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+[2024-09-27 14:04:36,274: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:04:36,277: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:04:36,279: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:04:36,279: INFO: common: created directory at: artifacts]
+[2024-09-27 14:04:36,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:04:36,279: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:05:09,951: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:05:10,337: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:05:10,337: INFO: main: *******************]
+[2024-09-27 14:05:10,337: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:05:10,340: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:05:10,342: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:05:10,344: INFO: common: created directory at: artifacts]
+[2024-09-27 14:05:10,344: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:05:10,740: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:05:10,944: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:05:11,128: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:05:11,128: INFO: main: *******************]
+[2024-09-27 14:05:11,128: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:05:11,130: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:05:11,131: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:05:11,131: INFO: common: created directory at: artifacts]
+[2024-09-27 14:05:11,131: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:05:11,205: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:06:07,126: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:06:07,377: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:06:07,377: INFO: main: *******************]
+[2024-09-27 14:06:07,377: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:06:07,381: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:06:07,400: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:06:07,405: INFO: common: created directory at: artifacts]
+[2024-09-27 14:06:07,558: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:06:23,951: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:06:23,952: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:06:23,953: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 14:06:58,385: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:06:58,388: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:06:58,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:06:58,390: INFO: common: created directory at: artifacts]
+[2024-09-27 14:06:58,390: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:06:58,390: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:07:32,477: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:07:32,894: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:07:32,894: INFO: main: *******************]
+[2024-09-27 14:07:32,894: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:07:32,895: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:07:32,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:07:32,897: INFO: common: created directory at: artifacts]
+[2024-09-27 14:07:32,897: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:07:33,180: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:07:33,370: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:07:33,591: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:07:33,591: INFO: main: *******************]
+[2024-09-27 14:07:33,591: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:07:33,592: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:07:33,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:07:33,592: INFO: common: created directory at: artifacts]
+[2024-09-27 14:07:33,592: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:07:33,669: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:08:24,262: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:08:24,476: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:08:24,476: INFO: main: *******************]
+[2024-09-27 14:08:24,476: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:08:24,478: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:08:24,480: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:08:24,481: INFO: common: created directory at: artifacts]
+[2024-09-27 14:08:24,559: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:08:40,789: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:08:40,791: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:08:40,791: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:15:27,339: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:15:27,344: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:15:27,346: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:15:27,347: INFO: common: created directory at: artifacts]
+[2024-09-27 14:15:27,347: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:15:27,347: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:16:03,433: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:16:03,853: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:16:03,853: INFO: main: *******************]
+[2024-09-27 14:16:03,853: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:16:03,855: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:16:03,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:16:03,859: INFO: common: created directory at: artifacts]
+[2024-09-27 14:16:03,859: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:16:04,255: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:16:04,492: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:16:04,676: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:16:04,676: INFO: main: *******************]
+[2024-09-27 14:16:04,676: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:16:04,677: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:16:04,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:16:04,677: INFO: common: created directory at: artifacts]
+[2024-09-27 14:16:04,678: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:16:04,813: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:16:53,286: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:16:53,361: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:16:53,361: INFO: main: *******************]
+[2024-09-27 14:16:53,361: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:16:53,369: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:16:53,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:16:53,372: INFO: common: created directory at: artifacts]
+[2024-09-27 14:16:53,446: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:17:08,430: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:17:08,430: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:17:08,431: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 14:21:50,197: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:21:50,200: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:21:50,201: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:21:50,202: INFO: common: created directory at: artifacts]
+[2024-09-27 14:21:50,202: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:21:50,202: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:22:25,687: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:22:26,100: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:22:26,100: INFO: main: *******************]
+[2024-09-27 14:22:26,100: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:22:26,103: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:22:26,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:22:26,104: INFO: common: created directory at: artifacts]
+[2024-09-27 14:22:26,104: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:22:26,563: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:22:26,823: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:22:27,080: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:22:27,080: INFO: main: *******************]
+[2024-09-27 14:22:27,080: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:22:27,082: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:22:27,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:22:27,084: INFO: common: created directory at: artifacts]
+[2024-09-27 14:22:27,084: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:22:27,237: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:23:19,500: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:23:19,592: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:23:19,592: INFO: main: *******************]
+[2024-09-27 14:23:19,592: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:23:19,597: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:23:19,617: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:23:19,624: INFO: common: created directory at: artifacts]
+[2024-09-27 14:23:19,717: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:23:35,024: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:23:35,025: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:23:35,025: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 14:24:54,409: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:24:54,421: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:24:54,422: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:24:54,423: INFO: common: created directory at: artifacts]
+[2024-09-27 14:24:54,423: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:24:54,423: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:25:32,711: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:25:33,367: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:25:33,368: INFO: main: *******************]
+[2024-09-27 14:25:33,368: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:25:33,369: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:25:33,371: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:25:33,373: INFO: common: created directory at: artifacts]
+[2024-09-27 14:25:33,373: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:25:33,775: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:25:33,902: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:25:33,985: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:25:33,985: INFO: main: *******************]
+[2024-09-27 14:25:33,985: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:25:33,986: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:25:33,987: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:25:33,987: INFO: common: created directory at: artifacts]
+[2024-09-27 14:25:33,987: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:25:34,082: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:26:24,891: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:26:25,002: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:26:25,002: INFO: main: *******************]
+[2024-09-27 14:26:25,002: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:26:25,004: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:26:25,009: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:26:25,013: INFO: common: created directory at: artifacts]
+[2024-09-27 14:26:25,098: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:26:39,813: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:26:39,814: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:26:39,814: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 14:31:20,938: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:31:20,942: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:31:20,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:31:20,945: INFO: common: created directory at: artifacts]
+[2024-09-27 14:31:20,945: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:31:20,945: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:32:03,509: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:32:03,834: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:32:03,834: INFO: main: *******************]
+[2024-09-27 14:32:03,834: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:32:03,835: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:32:03,836: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:32:03,837: INFO: common: created directory at: artifacts]
+[2024-09-27 14:32:03,837: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:32:04,171: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:32:04,254: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:32:04,332: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:32:04,332: INFO: main: *******************]
+[2024-09-27 14:32:04,332: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:32:04,333: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:32:04,334: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:32:04,334: INFO: common: created directory at: artifacts]
+[2024-09-27 14:32:04,334: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:32:04,427: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:32:49,793: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:32:49,890: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:32:49,890: INFO: main: *******************]
+[2024-09-27 14:32:49,890: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:32:49,892: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:32:49,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:32:49,893: INFO: common: created directory at: artifacts]
+[2024-09-27 14:32:49,980: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:33:04,331: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:33:04,332: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:33:04,332: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 14:37:51,430: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 14:37:51,434: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:37:51,436: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:37:51,436: INFO: common: created directory at: artifacts]
+[2024-09-27 14:37:51,436: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 14:37:51,436: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:38:40,108: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 14:38:40,584: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 14:38:40,585: INFO: main: *******************]
+[2024-09-27 14:38:40,585: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 14:38:40,590: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:38:40,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:38:40,592: INFO: common: created directory at: artifacts]
+[2024-09-27 14:38:40,592: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 14:38:40,884: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:38:40,973: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:38:41,056: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 14:38:41,057: INFO: main: *******************]
+[2024-09-27 14:38:41,057: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 14:38:41,058: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:38:41,059: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:38:41,059: INFO: common: created directory at: artifacts]
+[2024-09-27 14:38:41,059: INFO: common: created directory at: artifacts/training]
+[2024-09-27 14:38:41,145: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:39:26,407: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 14:39:26,490: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 14:39:26,490: INFO: main: *******************]
+[2024-09-27 14:39:26,490: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 14:39:26,492: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 14:39:26,493: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 14:39:26,493: INFO: common: created directory at: artifacts]
+[2024-09-27 14:39:26,574: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 14:39:40,873: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:39:40,873: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 14:39:40,873: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:03:13,669: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:03:13,674: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:03:13,676: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:03:13,676: INFO: common: created directory at: artifacts]
+[2024-09-27 15:03:13,677: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:03:13,677: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:03:47,704: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:03:48,168: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:03:48,168: INFO: main: *******************]
+[2024-09-27 15:03:48,168: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:03:48,170: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:03:48,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:03:48,173: INFO: common: created directory at: artifacts]
+[2024-09-27 15:03:48,173: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:03:48,669: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:03:48,831: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:03:49,081: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:03:49,081: INFO: main: *******************]
+[2024-09-27 15:03:49,081: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:03:49,083: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:03:49,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:03:49,084: INFO: common: created directory at: artifacts]
+[2024-09-27 15:03:49,084: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:03:49,217: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:04:45,646: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:04:45,772: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:04:45,772: INFO: main: *******************]
+[2024-09-27 15:04:45,772: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:04:45,774: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:04:45,775: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:04:45,775: INFO: common: created directory at: artifacts]
+[2024-09-27 15:04:45,865: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:05:04,413: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:05:04,414: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:05:04,415: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:05:29,448: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:05:29,450: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:05:29,452: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:05:29,453: INFO: common: created directory at: artifacts]
+[2024-09-27 15:05:29,453: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:05:29,453: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:06:05,346: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:06:05,706: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:06:05,706: INFO: main: *******************]
+[2024-09-27 15:06:05,706: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:06:05,710: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:06:05,711: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:06:05,711: INFO: common: created directory at: artifacts]
+[2024-09-27 15:06:05,711: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:06:06,047: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:06:06,156: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:06:06,327: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:06:06,327: INFO: main: *******************]
+[2024-09-27 15:06:06,327: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:06:06,328: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:06:06,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:06:06,329: INFO: common: created directory at: artifacts]
+[2024-09-27 15:06:06,329: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:06:06,421: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:06:53,117: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:06:53,205: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:06:53,205: INFO: main: *******************]
+[2024-09-27 15:06:53,205: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:06:53,207: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:06:53,208: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:06:53,208: INFO: common: created directory at: artifacts]
+[2024-09-27 15:06:53,281: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:07:07,938: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:07:07,939: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:07:07,939: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:09:57,557: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:09:57,561: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:09:57,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:09:57,563: INFO: common: created directory at: artifacts]
+[2024-09-27 15:09:57,563: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:09:57,563: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:10:34,120: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:10:34,482: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:10:34,482: INFO: main: *******************]
+[2024-09-27 15:10:34,482: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:10:34,483: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:10:34,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:10:34,484: INFO: common: created directory at: artifacts]
+[2024-09-27 15:10:34,484: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:10:34,797: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:10:34,927: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:10:35,031: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:10:35,031: INFO: main: *******************]
+[2024-09-27 15:10:35,031: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:10:35,032: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:10:35,033: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:10:35,033: INFO: common: created directory at: artifacts]
+[2024-09-27 15:10:35,033: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:10:35,117: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:11:35,364: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:11:35,644: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:11:35,644: INFO: main: *******************]
+[2024-09-27 15:11:35,644: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:11:35,646: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:11:35,656: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:11:35,657: INFO: common: created directory at: artifacts]
+[2024-09-27 15:11:35,795: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:11:52,093: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:11:52,093: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:11:52,094: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:14:13,825: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:14:13,829: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:14:13,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:14:13,831: INFO: common: created directory at: artifacts]
+[2024-09-27 15:14:13,831: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:14:13,831: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:14:49,004: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:14:49,374: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:14:49,374: INFO: main: *******************]
+[2024-09-27 15:14:49,374: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:14:49,376: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:14:49,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:14:49,379: INFO: common: created directory at: artifacts]
+[2024-09-27 15:14:49,379: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:14:49,786: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:14:49,933: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:14:50,030: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:14:50,030: INFO: main: *******************]
+[2024-09-27 15:14:50,030: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:14:50,032: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:14:50,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:14:50,033: INFO: common: created directory at: artifacts]
+[2024-09-27 15:14:50,033: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:14:50,113: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:15:40,195: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:15:40,332: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:15:40,332: INFO: main: *******************]
+[2024-09-27 15:15:40,332: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:15:40,335: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:15:40,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:15:40,336: INFO: common: created directory at: artifacts]
+[2024-09-27 15:15:40,438: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:15:57,090: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:15:57,091: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:15:57,091: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(self.config.mlflow_uri).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:38:21,940: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:38:21,943: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:38:21,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:38:21,945: INFO: common: created directory at: artifacts]
+[2024-09-27 15:38:21,945: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:38:21,945: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:38:57,349: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:38:57,751: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:38:57,751: INFO: main: *******************]
+[2024-09-27 15:38:57,751: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:38:57,752: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:38:57,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:38:57,754: INFO: common: created directory at: artifacts]
+[2024-09-27 15:38:57,754: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:38:58,103: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:38:58,273: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:38:58,421: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:38:58,422: INFO: main: *******************]
+[2024-09-27 15:38:58,422: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:38:58,423: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:38:58,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:38:58,424: INFO: common: created directory at: artifacts]
+[2024-09-27 15:38:58,424: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:38:58,517: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:39:51,555: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:39:51,702: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:39:51,702: INFO: main: *******************]
+[2024-09-27 15:39:51,702: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:39:51,703: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:39:51,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:39:51,704: INFO: common: created directory at: artifacts]
+[2024-09-27 15:39:51,802: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:39:51,803: ERROR: main: [Errno 20] Not a directory: 'artifacts/data_ingestion/Kidney-CTScan-data.zip']
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 47, in evaluation
+    self._valid_generator()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 32, in _valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/legacy/preprocessing/image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keras/src/legacy/preprocessing/image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: 'artifacts/data_ingestion/Kidney-CTScan-data.zip'
+[2024-09-27 15:42:05,387: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:42:05,396: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:42:05,398: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:42:05,399: INFO: common: created directory at: artifacts]
+[2024-09-27 15:42:05,399: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:42:05,399: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:42:56,808: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:42:57,173: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:42:57,173: INFO: main: *******************]
+[2024-09-27 15:42:57,173: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:42:57,176: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:42:57,177: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:42:57,177: INFO: common: created directory at: artifacts]
+[2024-09-27 15:42:57,177: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:42:57,579: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:42:57,716: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:42:57,849: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:42:57,850: INFO: main: *******************]
+[2024-09-27 15:42:57,850: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:42:57,851: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:42:57,851: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:42:57,851: INFO: common: created directory at: artifacts]
+[2024-09-27 15:42:57,851: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:42:57,942: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:43:56,310: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:43:56,419: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:43:56,419: INFO: main: *******************]
+[2024-09-27 15:43:56,419: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:43:56,422: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:43:56,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:43:56,423: INFO: common: created directory at: artifacts]
+[2024-09-27 15:43:56,540: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:44:14,121: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:44:14,122: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:44:14,122: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    mlflow.set_tracking_uri(self.config.mlflow_uri)
+                              ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:44:31,755: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:44:31,757: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:44:31,759: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:44:31,759: INFO: common: created directory at: artifacts]
+[2024-09-27 15:44:31,759: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:44:31,759: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:45:11,917: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:45:12,281: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:45:12,281: INFO: main: *******************]
+[2024-09-27 15:45:12,281: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:45:12,283: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:45:12,283: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:45:12,284: INFO: common: created directory at: artifacts]
+[2024-09-27 15:45:12,284: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:45:12,647: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:45:12,811: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:45:12,904: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:45:12,905: INFO: main: *******************]
+[2024-09-27 15:45:12,905: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:45:12,907: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:45:12,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:45:12,914: INFO: common: created directory at: artifacts]
+[2024-09-27 15:45:12,914: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:45:13,053: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:46:16,968: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:46:17,037: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:46:17,037: INFO: main: *******************]
+[2024-09-27 15:46:17,037: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:46:17,039: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:46:17,040: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:46:17,041: INFO: common: created directory at: artifacts]
+[2024-09-27 15:46:17,148: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:46:37,656: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:46:37,658: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:46:38,804: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 60, in log_into_mlflow
+    mlflow.log_params(self.config.all_params)
+     ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/tracking/fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/tracking/client.py", line 392, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/client.py", line 167, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-09-27 15:48:18,388: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:48:18,393: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:48:18,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:48:18,395: INFO: common: created directory at: artifacts]
+[2024-09-27 15:48:18,395: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:48:18,395: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:48:21,275: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/g0g4p0gv9kout25ume5rp5tm3bmp7i9k/1727426850000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=97287340-7ae5-4f43-8872-47ffe86fb946 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30b040e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x30b040e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/g0g4p0gv9kout25ume5rp5tm3bmp7i9k/1727426850000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=97287340-7ae5-4f43-8872-47ffe86fb946 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30b040e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/g0g4p0gv9kout25ume5rp5tm3bmp7i9k/1727426850000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=97287340-7ae5-4f43-8872-47ffe86fb946 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30b040e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 15:48:53,566: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:48:53,569: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:48:53,571: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:48:53,571: INFO: common: created directory at: artifacts]
+[2024-09-27 15:48:53,571: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:48:53,571: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:48:56,139: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/i3mg0vbabjldn3er1gbg1fjgq2sb0k0c/1727426925000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=0d2fc174-5293-4ba6-8059-179cc76924c4 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17db1d010>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x17db1d010>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/i3mg0vbabjldn3er1gbg1fjgq2sb0k0c/1727426925000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=0d2fc174-5293-4ba6-8059-179cc76924c4 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17db1d010>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/i3mg0vbabjldn3er1gbg1fjgq2sb0k0c/1727426925000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=0d2fc174-5293-4ba6-8059-179cc76924c4 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17db1d010>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 15:52:13,250: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:52:13,255: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:52:13,257: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:52:13,257: INFO: common: created directory at: artifacts]
+[2024-09-27 15:52:13,257: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:52:13,257: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:52:47,475: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 15:52:47,824: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 15:52:47,824: INFO: main: *******************]
+[2024-09-27 15:52:47,824: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 15:52:47,825: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:52:47,827: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:52:47,827: INFO: common: created directory at: artifacts]
+[2024-09-27 15:52:47,827: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 15:52:48,203: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:52:48,367: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:52:48,482: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 15:52:48,483: INFO: main: *******************]
+[2024-09-27 15:52:48,483: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 15:52:48,484: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:52:48,485: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:52:48,485: INFO: common: created directory at: artifacts]
+[2024-09-27 15:52:48,485: INFO: common: created directory at: artifacts/training]
+[2024-09-27 15:52:48,565: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:53:43,711: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 15:53:43,807: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 15:53:43,808: INFO: main: *******************]
+[2024-09-27 15:53:43,808: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 15:53:43,810: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:53:43,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:53:43,818: INFO: common: created directory at: artifacts]
+[2024-09-27 15:53:43,924: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 15:54:02,002: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:54:02,003: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 15:54:02,003: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(self.config.mlflow_uri).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 15:59:50,087: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 15:59:50,094: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 15:59:50,096: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 15:59:50,096: INFO: common: created directory at: artifacts]
+[2024-09-27 15:59:50,096: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 15:59:50,096: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:00:24,850: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:00:25,261: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:00:25,262: INFO: main: *******************]
+[2024-09-27 16:00:25,262: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:00:25,266: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:00:25,270: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:00:25,272: INFO: common: created directory at: artifacts]
+[2024-09-27 16:00:25,273: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:00:25,672: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:00:25,860: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:00:25,944: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:00:25,944: INFO: main: *******************]
+[2024-09-27 16:00:25,944: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:00:25,945: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:00:25,946: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:00:25,946: INFO: common: created directory at: artifacts]
+[2024-09-27 16:00:25,947: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:00:26,059: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:01:17,494: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:01:17,625: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:01:17,625: INFO: main: *******************]
+[2024-09-27 16:01:17,626: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:01:17,627: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:01:17,631: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:01:17,632: INFO: common: created directory at: artifacts]
+[2024-09-27 16:01:17,714: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:01:33,043: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:01:33,044: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:01:33,044: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 16:07:48,910: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:07:48,929: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:07:49,012: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:07:49,014: INFO: common: created directory at: artifacts]
+[2024-09-27 16:07:49,015: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:07:49,015: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:07:51,922: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=16bde0ce-6e8e-4ad0-9ede-1ebe17b3cf57 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30a3dcf10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x30a3dcf10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=16bde0ce-6e8e-4ad0-9ede-1ebe17b3cf57 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30a3dcf10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=16bde0ce-6e8e-4ad0-9ede-1ebe17b3cf57 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30a3dcf10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 16:08:03,485: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:08:03,487: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:08:03,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:08:03,488: INFO: common: created directory at: artifacts]
+[2024-09-27 16:08:03,488: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:08:03,488: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:08:06,359: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=a0fda354-ef99-4a3b-8e34-d676c82d60d9 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x309209410>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x309209410>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=a0fda354-ef99-4a3b-8e34-d676c82d60d9 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x309209410>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=a0fda354-ef99-4a3b-8e34-d676c82d60d9 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x309209410>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 16:08:21,905: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:08:21,906: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:08:21,908: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:08:21,908: INFO: common: created directory at: artifacts]
+[2024-09-27 16:08:21,908: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:08:21,908: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:08:24,235: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=5c7a68bf-c36e-4200-b6c7-8661cb5e1f05 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17ea30e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x17ea30e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=5c7a68bf-c36e-4200-b6c7-8661cb5e1f05 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17ea30e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=5c7a68bf-c36e-4200-b6c7-8661cb5e1f05 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17ea30e10>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 16:08:35,736: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:08:35,738: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:08:35,740: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:08:35,740: INFO: common: created directory at: artifacts]
+[2024-09-27 16:08:35,741: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:08:35,741: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:08:38,113: ERROR: main: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=1bc767a5-a2df-4070-9aec-93c7ceef6d3d (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17f8d8c90>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connection.py", line 206, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x17f8d8c90>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=1bc767a5-a2df-4070-9aec-93c7ceef6d3d (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17f8d8c90>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 12, in <module>
+    obj.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_data()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 30, in download_data
+    raise e
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/data_ingestion.py", line 25, in download_data
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/gdown/download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 724, in <listcomp>
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-0g-3k-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/h4eucs50qvh3fritujrg22v1ssosk1h2/1727428050000/03596185573253187741/*/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3?uuid=1bc767a5-a2df-4070-9aec-93c7ceef6d3d (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x17f8d8c90>: Failed to resolve 'doc-0g-3k-docs.googleusercontent.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[2024-09-27 16:09:09,847: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:09:09,852: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:09:09,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:09:09,855: INFO: common: created directory at: artifacts]
+[2024-09-27 16:09:09,855: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:09:09,855: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:09:47,096: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:09:47,479: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:09:47,479: INFO: main: *******************]
+[2024-09-27 16:09:47,479: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:09:47,481: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:09:47,481: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:09:47,481: INFO: common: created directory at: artifacts]
+[2024-09-27 16:09:47,481: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:09:47,973: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:09:48,135: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:09:48,247: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:09:48,247: INFO: main: *******************]
+[2024-09-27 16:09:48,247: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:09:48,248: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:09:48,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:09:48,248: INFO: common: created directory at: artifacts]
+[2024-09-27 16:09:48,248: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:09:48,336: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:10:42,327: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:10:42,440: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:10:42,440: INFO: main: *******************]
+[2024-09-27 16:10:42,440: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:10:42,443: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:10:42,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:10:42,444: INFO: common: created directory at: artifacts]
+[2024-09-27 16:10:42,530: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:10:59,335: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:10:59,336: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:10:59,336: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.tracking.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 16:13:40,766: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:13:40,775: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:13:40,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:13:40,777: INFO: common: created directory at: artifacts]
+[2024-09-27 16:13:40,777: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:13:40,777: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:14:16,232: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:14:16,634: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:14:16,634: INFO: main: *******************]
+[2024-09-27 16:14:16,634: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:14:16,635: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:14:16,636: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:14:16,636: INFO: common: created directory at: artifacts]
+[2024-09-27 16:14:16,636: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:14:17,022: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:14:17,187: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:14:17,301: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:14:17,301: INFO: main: *******************]
+[2024-09-27 16:14:17,301: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:14:17,302: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:14:17,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:14:17,303: INFO: common: created directory at: artifacts]
+[2024-09-27 16:14:17,303: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:14:17,393: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:15:09,805: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:15:09,914: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:15:09,914: INFO: main: *******************]
+[2024-09-27 16:15:09,914: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:15:09,915: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:15:09,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:15:09,916: INFO: common: created directory at: artifacts]
+[2024-09-27 16:15:10,014: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:15:26,563: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:15:26,563: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:15:26,563: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.tracking.get_tracking_uri())#.scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 16:45:00,382: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:45:00,390: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:45:00,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:45:00,393: INFO: common: created directory at: artifacts]
+[2024-09-27 16:45:00,393: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:45:00,393: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:45:35,464: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:45:35,827: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:45:35,828: INFO: main: *******************]
+[2024-09-27 16:45:35,828: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:45:35,829: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:45:35,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:45:35,832: INFO: common: created directory at: artifacts]
+[2024-09-27 16:45:35,832: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:45:36,207: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:45:36,356: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:45:36,491: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:45:36,492: INFO: main: *******************]
+[2024-09-27 16:45:36,492: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:45:36,493: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:45:36,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:45:36,494: INFO: common: created directory at: artifacts]
+[2024-09-27 16:45:36,494: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:45:36,583: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:46:30,819: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:46:30,972: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:46:30,972: INFO: main: *******************]
+[2024-09-27 16:46:30,972: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:46:30,974: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:46:30,977: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:46:30,978: INFO: common: created directory at: artifacts]
+[2024-09-27 16:46:31,070: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:46:46,688: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:46:46,688: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:46:46,690: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.tracking.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 16:47:12,625: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:47:12,627: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:47:12,629: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:47:12,630: INFO: common: created directory at: artifacts]
+[2024-09-27 16:47:12,630: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:47:12,630: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:47:49,112: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:47:49,457: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:47:49,457: INFO: main: *******************]
+[2024-09-27 16:47:49,457: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:47:49,459: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:47:49,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:47:49,461: INFO: common: created directory at: artifacts]
+[2024-09-27 16:47:49,461: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:47:49,817: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:47:49,944: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:47:50,025: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:47:50,026: INFO: main: *******************]
+[2024-09-27 16:47:50,026: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:47:50,027: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:47:50,028: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:47:50,028: INFO: common: created directory at: artifacts]
+[2024-09-27 16:47:50,028: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:47:50,110: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:48:42,877: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:48:42,964: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:48:42,964: INFO: main: *******************]
+[2024-09-27 16:48:42,964: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:48:42,967: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:48:42,969: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:48:42,970: INFO: common: created directory at: artifacts]
+[2024-09-27 16:48:43,054: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:48:59,247: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:48:59,248: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:48:59,249: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.tracking.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-09-27 16:49:13,748: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-27 16:49:13,751: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:49:13,753: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:49:13,753: INFO: common: created directory at: artifacts]
+[2024-09-27 16:49:13,753: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-27 16:49:13,753: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:49:51,191: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/Kidney-CTScan-data.zip]
+[2024-09-27 16:49:51,534: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-27 16:49:51,534: INFO: main: *******************]
+[2024-09-27 16:49:51,534: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-27 16:49:51,536: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:49:51,537: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:49:51,538: INFO: common: created directory at: artifacts]
+[2024-09-27 16:49:51,538: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-27 16:49:51,888: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:49:52,018: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:49:52,116: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-27 16:49:52,116: INFO: main: *******************]
+[2024-09-27 16:49:52,116: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-27 16:49:52,117: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:49:52,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:49:52,118: INFO: common: created directory at: artifacts]
+[2024-09-27 16:49:52,118: INFO: common: created directory at: artifacts/training]
+[2024-09-27 16:49:52,199: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:50:40,906: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-27 16:50:41,022: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-27 16:50:41,022: INFO: main: *******************]
+[2024-09-27 16:50:41,022: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-27 16:50:41,024: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-27 16:50:41,025: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-27 16:50:41,025: INFO: common: created directory at: artifacts]
+[2024-09-27 16:50:41,106: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-27 16:50:56,294: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:50:56,295: INFO: common: json file saved at: /Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/scores.json]
+[2024-09-27 16:50:56,295: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/main.py", line 49, in <module>
+    model_evalution.main()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/src/CNNClassifier/components/model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable

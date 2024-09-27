@@ -77,7 +77,7 @@ class ConfigurationManager:
 
     def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
-            path_of_model="/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/artifacts/training/model.h5",
+            path_of_model="artifacts/training/model.h5",
             training_data="/Users/tirtarumy/Documents/Data scientist porto/Self Project/ML Engineer (Deep Learning)/Kidney Diseases Classifications/artifacts/data_ingestion/kidney-ct-scan-image",
             mlflow_uri="https://dagshub.com/tirtapir/End-to-end-Kidney-Diseases-Classification.mlflow",
             all_params=self.params,
