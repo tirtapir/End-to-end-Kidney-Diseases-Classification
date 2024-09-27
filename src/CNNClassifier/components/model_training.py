@@ -5,6 +5,7 @@ import tensorflow as tf
 import time
 from src.CNNClassifier.entity.config_entity import (TrainingConfig)
 from pathlib import Path
+from tensorflow.keras import Model
 
 
 class Training:
