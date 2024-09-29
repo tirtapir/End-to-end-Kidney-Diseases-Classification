@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/tirtarumy/Documents/Data%20scientist%20porto/Self%20Project/ML%20Engineer%20%28Deep%20Learning%29/Kidney%20Diseases%20Classifications/mlruns/0/11449672aad74386b29fa5f59f89c8da/artifacts
+end_time: 1727537604422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 11449672aad74386b29fa5f59f89c8da
+run_name: bemused-ant-347
+run_uuid: 11449672aad74386b29fa5f59f89c8da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727537598795
+status: 4
+tags: []
+user_id: tirtarumy
